@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portoflio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d1b4d3baca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img src="imgs/esi_black.png" />
+      <ul class="navlinks">
+        <li>
+          <a href="#About"> About </a>
+        </li>
+        <li>
+          <a href="#Skills"> Skills </a>
+        </li>
+        <li>
+          <a href="#Contact"> Contact </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="hero">
+      <div class="row">
+        <div class="col1">
+          <p id="p1">Hello, my name is</p>
+          <p id="p2">Abd Ellatif Bendjeddou</p>
+          <p id="p3">
+            And I am a
+            <span class="typing" style="color: #3770b1"> Developper </span>
+          </p>
+
+          <ul class="btnslist">
+            <li>
+              <a href="#Contact">
+                <div class="letstalk">
+                  <p>Let's talk</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://resume.io/r/dMbDYhbRH">
+                <div class="downcv">
+                  <p>get CV</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col2">
+          <img id="Mypic" src="imgs/toji.jpg" alt="My picture" />
+        </div>
+      </div>
+    </section>
+    <script>
+      var typed = new Typed(".typing", {
+        strings: ["Developper", "Future CS Engineer", ""],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
+
+    <hr />
+
+    <section class="About" id="About">
+      <h1>About me</h1>
+
+      <div id="aboutme">
+        <p>
+          Hello, my name is Abd Ellatif Bendjeddou, Grounded and
+          sollution-oriented compter scientist with a wide variety of
+          professional experiences. Adept at motivating self and others, capable
+          of working in a teamwork based environnment, currently a student at
+          Higher National School of Computer Science (ESI Algiers), set to
+          graduate in 2025.
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="Skills">
+      <h1>Skills</h1>
+
+      <div class="row">
+        <div class="column">
+          <h2 style="margin-left: 30%; margin-right: 30%; line-height: 2vw">
+            Languages
+          </h2>
+          <div class="items">
+            <p>
+              Arabic <br />
+              English <br />
+              French
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <h2 style="margin-left: 28%; margin-right: 28%; line-height: 2vw">
+            Technical skills
+          </h2>
+
+          <div class="items">
+            <p>
+              Computer and technology skills <br />
+              Problem solving <br />
+              Algorithms and data Structures <br />
+              Mathematics
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <h2 style="margin-left: 19%; margin-right: 19%; line-height: 2vw">
+            Programming languages
+          </h2>
+
+          <div class="items">
+            <p>
+              C/C++ <br />
+              Kotlin/Java<br />
+              JavaScript +(HTML/CSS)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="Contact">
+      <h1>Contact me</h1>
+
+      <div class="row2">
+        <div class="column2"></div>
+        <div class="column3">
+          <form
+            action="https://formsubmit.co/ka_bendjeddou@esi.dz"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Full name" ;" required>
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail adress"
+              required
+            />
+            <textarea name="Message" placeholder="Full message..."></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <section class="footer">
+    <ul class="icons">
+      <li id="gmail">
+        <img src="imgs/Asset 2.png" alt="" />
+        <div id="at">
+          <p>ka_bendjeddou@esi.dz</p>
+        </div>
+      </li>
+      <li id="phone">
+        <img src="imgs/Asset 4.png" alt="" />
+        <div id="tlfn">
+          <p>0561831394</p>
+        </div>
+      </li>
+      <li id="linkedin">
+        <img src="imgs/Asset 3.png" alt="" />
+        <div id="in">
+          <p>linkedin.com/in/abdellatif-bendjeddou/</p>
+        </div>
+      </li>
+    </ul>
+
+    <p style="color: white; padding-top: 5vw">
+      Made with <img src="imgs/heart.png" style="height: 1vw; width: 1vw" /> By
+      Abd ellatif Bendjeddou
+    </p>
+  </section>
+</html>
